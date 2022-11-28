@@ -2,6 +2,10 @@
 #include<algorithm>
 using namespace std;
 
+long long int max(long long int maxa,long long int maxb){
+	return maxa>maxb?maxa:maxb;
+}
+
 int route[1010][1010] = { 0 };
 int maxxi1[1010][1010] = { 0 };
 int maxgua1[1010][1010] = { 0 };
@@ -45,7 +49,7 @@ int main()
 
 	}
 
-	int ans = 0;
+	long long int ans = 0;
 	int num1, num2;
 
 	for (int x = 2; x < n; x++)
@@ -59,6 +63,6 @@ int main()
 		}
 	}
 
-	printf("%d", ans);
+	printf("%lld", ans);
 
 }
